@@ -13,12 +13,9 @@
     }
   ],
   "routes": [
-    { "src": "^/studio/static/(.*)", "dest": "/studio/static/$1" },
-    { "src": "^/studio/(.*)", "dest": "/studio/index.html" },
-    {
-      "src": "/(.*)",
-      "dest": "/web/$1"
-    }
+    { "src": "/studio/static/(.*)", "dest": "/studio/static/$1" },
+    { "src": "/studio/.*", "dest": "/studio/index.html" },
+    { "src": "/(.*)", "dest": "/web/$1" }
   ],
   "alias": ["sanity-gatsby-portfolio.vercel.app"]
 }
